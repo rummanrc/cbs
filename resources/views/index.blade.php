@@ -22,7 +22,11 @@
 			</div>
 		</div>
 	@empty
-		No books.
+		<div class="container">
+  <div class="jumbotron">
+    <h1>No Books Available</h1>
+  </div>
+</div>
 	@endforelse	
 </div>
 

@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/profile/{username}', 'ProfileController@profile');
 Auth::routes();
 Route::resource('books', 'BookController');
 Route::get('/home', 'HomeController@index')->name('home');

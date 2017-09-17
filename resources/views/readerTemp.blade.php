@@ -19,5 +19,12 @@
 	<input type="submit" class="btn btn-success pull-right">
 </form>
 
+@foreach($book->comments as $comment)
+{
+	<p>{{ $comment->comment_body }}</p>
+}
+@endforeach
+
+
 
 @endsection

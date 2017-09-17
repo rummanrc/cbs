@@ -9,6 +9,17 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+     use \Illuminate\Auth\Authenticatable;
+
+     public function books(){
+        return $this->hasMany('App\Book');
+    }
+
+    public function comments(){
+        return $this->hasMany('App\Comment');
+    }
+
+
     /**
      * The attributes that are mass assignable.
      *

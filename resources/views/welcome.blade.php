@@ -99,9 +99,12 @@ body {font-family: "Lato", sans-serif}
       <p class="w3-opacity w3-center"><i>You may like:</i></p><br>
 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">Treasure Island <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">The adventures of Tom Sawyer <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">Pinoccio <span class="w3-badge w3-right w3-margin-right">3</span></li>
+        <li class="w3-padding"><a href="http://www.planetpublish.com/wp-content/uploads/2011/11/Treasure_Island_NT.pdf">Treasure Island </a></li>
+        <li class="w3-padding"><a href="http://www.planetpublish.com/wp-content/uploads/2011/11/The_Adventures_of_Tom_Sawyer_NT.pdf">The adventures of Tom Sawyer </a></li>
+        <li class="w3-padding"><a href="http://www.pinocchio.it/pagine/traduzione_testo/Adventures_of_Pinocchio.pdf">Pinoccio </a></li>
+        @if (Auth::user())
+        <li class="w3-padding"><a href="\books">Browse more books </a></li>
+         @endif
       </ul>
         </div>
       </div>

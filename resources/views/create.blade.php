@@ -11,23 +11,30 @@
 		</div>
 <div class="panel-body">
 
-
-
 <form method="POST" action="/books" enctype="multipart/form-data">
 
 {{ csrf_field() }}
 	<div class="form-group">
-            <label class="col-md-3 control-label" name="resume">Upload pdf:</label>
-            <div class="col-md-8">
+		<div class="panel row">
+            <label class="col-md-4 control-label" name="resume">Upload pdf:</label>
+            
                 <input  type="file" id="book" placeholder="Book" name="book" class=""/>
             </div>
+                       
+            <div class="panel row">
+            <label class="col-md-4 control-label" name="resume">Book Name:</label>
            <input  type="text" id="filepath" placeholder="Book Name" name="filepath" class=""/>
-	<label for="content"> Content Description </label>
+       		</div>
+     <div class="panel">
+	<label for="content"> Book Description </label>
 	<TEXTAREA name="content" class="form-control"></TEXTAREA>
-	<input type="submit" onclick="uploadFile();" class="btn btn-success pull-right">
+</div>
+<div class="panel-footer">
+	<input type="submit" class="btn btn-success btn-lg btn-block" value="Upload">
+</div>
 </form>
 	
-	</div>
+</div>
 </div>
 
 </div>

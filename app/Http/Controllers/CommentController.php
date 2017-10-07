@@ -61,14 +61,15 @@ class CommentController extends Controller
     
     public function destroy($id)
     {
-                $comment = Comment::where('id', $comment_id)->first();
+                $comment = Comment::where('id', $id)->first();
         if(Auth::user()!=$comment->user){
             return redirect()->back();
         }
-        $comment->delete();
         $book = Book::findOrFail($comment->book_id);
+        $comment->delete();
+        
         //return redirect()->route('home');
         //$comments = App\Book::find()->comments();  
-        return redirect()->view('readerTemp', compact('book'));
+        return view('readerTemp', compact('book'));
     }
 }

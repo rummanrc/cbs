@@ -11,6 +11,7 @@
     <title>Cloud BookShelf</title>
 
     <!-- Styles -->
+ 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -74,6 +75,9 @@
                                     </li>
                                     <li>
                                         <a href="/books">Browse Books</a>
+                                    </li>
+                                    <li>
+                                        <a href="/search">Search for Books</a>
                                     </li>
                                 </ul>
                             </li>

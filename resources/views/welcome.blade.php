@@ -46,6 +46,7 @@ body {font-family: "Lato", sans-serif}
                       <a href="/profile/{{ Auth::user()->username }}" class="w3-bar-item w3-button">My Profile</a>
                        <a href="/books/create" class="w3-bar-item w3-button">Upload Books</a>
                        <a href="/books" class="w3-bar-item w3-button">Browse Books</a>
+                       <a href="/search" class="w3-bar-item w3-button">Search</a>
                 </div>
               </div>
                             </div>

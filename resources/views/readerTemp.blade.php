@@ -17,7 +17,7 @@
            <!--input  type="text" id="filepath" placeholder="Book Name" name="filepath" class=""/-->
 	<TEXTAREA name="comment_body" class="form-control"></TEXTAREA>
 	<input type="hidden" name="book_id" value="{{ $book->id }}">
-	<input type="submit" class="btn btn-success pull-right">
+	<input type="submit" class="btn btn-success pull-right" value="Comment">
 </form>
 </div>
 </br></br>
